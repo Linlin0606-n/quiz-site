@@ -132,10 +132,8 @@
         function calculateResult() {
             const answers = { A: 0, B: 0, C: 0, D: 0, E: 0 };
 
-            const questions = 5;
-
             // Loop through each question and calculate the answers
-            for (let i = 1; i <= questions; i++) {
+            for (let i = 1; i <= 5; i++) {
                 const answer = document.querySelector(`input[name="question${i}"]:checked`);
                 if (answer) {
                     answers[answer.value]++;
@@ -143,32 +141,4 @@
             }
 
             // Determine the result based on the most selected option
-            let result = '';
-            const maxAnswer = Object.keys(answers).reduce((a, b) => answers[a] > answers[b] ? a : b);
-
-            switch (maxAnswer) {
-                case 'A':
-                    result = "คณะที่แนะนำ: คณะแพทยศาสตร์, วิทยาศาสตร์, วิศวกรรมศาสตร์";
-                    break;
-                case 'B':
-                    result = "คณะที่แนะนำ: คณะสถาปัตยกรรมศาสตร์, นิเทศศาสตร์, คณะศิลปกรรมศาสตร์";
-                    break;
-                case 'C':
-                    result = "คณะที่แนะนำ: คณะวิศวกรรมศาสตร์, คณะวิทยาการคอมพิวเตอร์, คณะแพทยศาสตร์";
-                    break;
-                case 'D':
-                    result = "คณะที่แนะนำ: คณะบริหารธุรกิจ, คณะบัญชี, คณะเศรษฐศาสตร์";
-                    break;
-                case 'E':
-                    result = "คณะที่แนะนำ: คณะสังคมศาสตร์, คณะจิตวิทยา, คณะศึกษาศาสตร์";
-                    break;
-                default:
-                    result = "กรุณาตอบคำถามทั้งหมด!";
-            }
-
-            document.getElementById("result").innerText = result;
-        }
-    </script>
-
-</body>
-</html>
+            let result =
