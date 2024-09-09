@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ค้นหาตัวเองก่อนจบ ม.6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .quiz-container {
+            max-width: 700px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h2 {
+            font-size: 18px;
+        }
+        .options {
+            margin: 10px 0;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .result {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ค้นหาตัวเองก่อนจบ ม.6</h1>
+    <div class="quiz-container">
+        <div id="quiz">
+            <!-- Question 1 -->
+            <div class="question">
+                <h2>1. คุณชอบกิจกรรมประเภทไหนมากที่สุด?</h2>
+                <div class="options">
+                    <label><input type="radio" name="question1" value="A"> การทดลองและแก้ปัญหาทางวิทยาศาสตร์</label>
+                    <label><input type="radio" name="question1" value="B"> การออกแบบและสร้างสรรค์ผลงานศิลปะ</label>
+                    <label><input type="radio" name="question1" value="C"> การแก้ปัญหาเชิงคณิตศาสตร์และตรรกะ</label>
+                    <label><input type="radio" name="question1" value="D"> การทำงานกับข้อมูลและวิเคราะห์เชิงสถิติ</label>
+                    <label><input type="radio" name="question1" value="E"> การช่วยเหลือผู้คนและทำงานในชุมชน</label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h2>2. คุณรู้สึกสนุกกับการทำงานแบบไหนมากที่สุด?</h2>
+                <div class="options">
+                    <label><input type="radio" name="question2" value="A"> การค้นคว้าและทดลองในห้องทดลอง</label>
+                    <label><input type="radio" name="question2" value="B"> การวาดภาพหรือออกแบบกราฟิก</label>
+                    <label><input type="radio" name="question2" value="C"> การแก้โจทย์คณิตศาสตร์ซับซ้อน</label>
+                    <label><input type="radio" name="question2" value="D"> การวิเคราะห์ข้อมูลและจัดทำรายงาน</label>
+                    <label><input type="radio" name="question2" value="E"> การให้คำปรึกษาหรือช่วยเหลือผู้อื่น</label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h2>3. วิชาที่คุณทำได้ดีและถนัดที่สุดคืออะไร?</h2>
+                <div class="options">
+                    <label><input type="radio" name="question3" value="A"> ชีววิทยา, ฟิสิกส์, เคมี</label>
+                    <label><input type="radio" name="question3" value="B"> ศิลปะ, การออกแบบ</label>
+                    <label><input type="radio" name="question3" value="C"> คณิตศาสตร์, ฟิสิกส์</label>
+                    <label><input type="radio" name="question3" value="D"> การจัดการธุรกิจ, การตลาด</label>
+                    <label><input type="radio" name="question3" value="E"> จิตวิทยา, สังคมศึกษา</label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h2>4. คุณชอบการทำงานแบบใดมากที่สุด?</h2>
+                <div class="options">
+                    <label><input type="radio" name="question4" value="A"> การทำวิจัยทางวิทยาศาสตร์</label>
+                    <label><input type="radio" name="question4" value="B"> การออกแบบผลิตภัณฑ์หรือแฟชั่น</label>
+                    <label><input type="radio" name="question4" value="C"> การวิเคราะห์ปัญหาและแก้ปัญหา</label>
+                    <label><input type="radio" name="question4" value="D"> การบริหารและจัดการโปรเจกต์ต่างๆ</label>
+                    <label><input type="radio" name="question4" value="E"> การทำงานกับเด็ก, คนแก่, หรือผู้ด้อยโอกาส</label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h2>5. สถานที่ทำงานในฝันของคุณเป็นแบบไหน?</h2>
+                <div class="options">
+                    <label><input type="radio" name="question5" value="A"> ห้องทดลองวิทยาศาสตร์หรือสถาบันวิจัย</label>
+                    <label><input type="radio" name="question5" value="B"> สตูดิโอออกแบบ, บริษัทสถาปนิก, หรือออฟฟิศกราฟิกดีไซน์</label>
+                    <label><input type="radio" name="question5" value="C"> สำนักงานที่มีการวิเคราะห์ข้อมูลหรือเขียนโปรแกรม</label>
+                    <label><input type="radio" name="question5" value="D"> บริษัทที่เกี่ยวข้องกับธุรกิจหรือการเงิน</label>
+                    <label><input type="radio" name="question5" value="E"> โรงพยาบาล, สถานสงเคราะห์, หรือองค์กรไม่แสวงหากำไร</label>
+                </div>
+            </div>
+
+            <button class="btn" onclick="calculateResult()">ส่งคำตอบ</button>
+
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+
+    <script>
+        function calculateResult() {
+            const answers = { A: 0, B: 0, C: 0, D: 0, E: 0 };
+
+            const questions = 5;
+
+            // Loop through each question and calculate the answers
+            for (let i = 1; i <= questions; i++) {
+                const answer = document.querySelector(`input[name="question${i}"]:checked`);
+                if (answer) {
+                    answers[answer.value]++;
+                }
+            }
+
+            // Determine the result based on the most selected option
+            let result = '';
+            const maxAnswer = Object.keys(answers).reduce((a, b) => answers[a] > answers[b] ? a : b);
+
+            switch (maxAnswer) {
+                case 'A':
+                    result = "คณะที่แนะนำ: คณะแพทยศาสตร์, วิทยาศาสตร์, วิศวกรรมศาสตร์";
+                    break;
+                case 'B':
+                    result = "คณะที่แนะนำ: คณะสถาปัตยกรรมศาสตร์, นิเทศศาสตร์, คณะศิลปกรรมศาสตร์";
+                    break;
+                case 'C':
+                    result = "คณะที่แนะนำ: คณะวิศวกรรมศาสตร์, คณะวิทยาการคอมพิวเตอร์, คณะแพทยศาสตร์";
+                    break;
+                case 'D':
+                    result = "คณะที่แนะนำ: คณะบริหารธุรกิจ, คณะบัญชี, คณะเศรษฐศาสตร์";
+                    break;
+                case 'E':
+                    result = "คณะที่แนะนำ: คณะสังคมศาสตร์, คณะจิตวิทยา, คณะศึกษาศาสตร์";
+                    break;
+                default:
+                    result = "กรุณาตอบคำถามทั้งหมด!";
+            }
+
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+
+</body>
+</html>
